@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="./task.js"></script>
+    <title>task | 1</title>
+    <style>
+        table {
+            text-align: center;
+            position: relative;
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #ffc907;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lesson__container">
+        <h1 class="lesson__title">Задача 1</h1>
+        <p> Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+        </p>
+    </div>
+
+    <script>
+        // задача 1
+        const letterOne = +prompt('введіть перше число')
+        const letterTwo = +prompt('введіть друге число')
+        document.write(` <div class="lesson__container">
+                            <table>
+                                <tr>
+                                    <td>сума чисел : </td>
+                                    <td>${letterOne + letterTwo}</td>
+                                </tr>
+                                <tr>
+                                    <td>добуток чисел : </td>
+                                    <td>${letterOne * letterTwo}</td>
+                                </tr>
+                                <tr>
+                                    <td>частка чисел : </td>
+                                    <td>${letterOne / letterTwo}</td>
+                                </tr>
+                            
+                            </table>
+                        </div >` )
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>task | 4</title>
+    <style>
+        table {
+            text-align: center;
+            position: relative;
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #ffc907;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lesson__container">
+        <h1 class="lesson__title">Задача 4</h1>
+        <p> Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
+    </div>
+
+    <script>
+        let lengthInMeters = '100000 см'
+        lengthInMeters = lengthInMeters.match(/\d+/g)
+        const meters = lengthInMeters / 100
+        const kilometers = meters / 1000
+
+        document.write(` <div class="lesson__container">
+                            <table>
+                                <tr>
+                                    <td> у ${lengthInMeters} сантиметрів</td>\
+                                        <td>${meters} метрів.</td>
+                                        <td>${kilometers}  кілометрів.</td>
+                                </tr>                 
+                            </table>
+                        </div >` )
+
+
+
+
+    </script>
+
+</body>
+
+</html>

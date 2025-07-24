@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>task | 7</title>
+    <style>
+        table {
+            text-align: left;
+            position: relative;
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #ffc907;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lesson__container">
+        <h1 class="lesson__title">Задача 7</h1>
+        <p>Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).
+        </p>
+    </div>
+
+    <script>
+        let maxInt = 6
+        const RANDOM_INT_6 = Math.floor(Math.random() * (maxInt + 1));
+        maxInt = 12
+        const RANDOM_INT_12 = Math.floor(Math.random() * (maxInt + 1));
+
+        document.write(` <div class="lesson__container">
+                            <table>
+                                <tr>
+                                    <td>випадкове число від 1 до 12</td>
+                                    <td>${RANDOM_INT_12}</td>
+                                </tr>       
+                                <tr>
+                                    <td>випадкове число від 1 до 12</td>
+                                    <td>${RANDOM_INT_6}</td>
+                                </tr>       
+                            </table>
+                        </div >` )
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

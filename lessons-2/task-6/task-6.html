@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>task | 6</title>
+    <style>
+        table {
+            text-align: left;
+            position: relative;
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #ffc907;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lesson__container">
+        <h1 class="lesson__title">Задача 6</h1>
+        <p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+    </div>
+
+    <script>
+     const GOODS_PRICE        = parseInt(prompt('вартість товару'))
+     const GOODS_PRICE_FORMAT = GOODS_PRICE.toLocaleString('ru-RU')
+     const GOODS_NUMBER       = parseInt(prompt('кількість товару'))
+     const TOTAL_SUM          = (GOODS_PRICE * GOODS_NUMBER).toLocaleString('ru-RU')
+
+        document.write(` <div class="lesson__container">
+                            <table>
+                                <tr>
+                                     <td>айфон 15</td>
+                                    <td>вартість товару ${ GOODS_PRICE_FORMAT}грн </td>
+                                    <td>кількість ${GOODS_NUMBER} товарів</td>
+                                   
+                                </tr>  
+                                <tr>  
+                                       <td colspan="2"> ЗАГАЛЬНА СУМА:</td>
+                                       
+                                       <td>${TOTAL_SUM} грн</td>
+                                   
+                                </tr>             
+                            </table>
+                        </div >` )
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>task | 2</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="lesson__container">
+        <h1 class="lesson__title">Задача 2</h1>
+        <p> Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.</p>
+    </div>
+
+    <script>
+        const date = new Date()
+        // const presentDay = date.getDate()
+        // const presentMonth = date.getMonth() + 1
+        const presentYear = date.getFullYear()
+        let dateOfBirth = "1 січня 2002"
+        dateOfBirth = dateOfBirth.match(/\d+/g)
+        dateOfBirth.forEach(e => {
+            if (parseInt(e) > 31) {
+                yaar = presentYear - e
+                document.write(` <div class="lesson__container">
+                                    <div>
+                                        <p>на даний час мені ${yaar} роки</p>
+                                    </div>
+                                </div>`)
+            }
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

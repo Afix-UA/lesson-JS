@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>task | 3</title>
+     <style>
+        table {
+            text-align: center;
+            position: relative;
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #ffc907;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lesson__container">
+        <h1 class="lesson__title">Задача 3</h1>
+        <p> Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).</p>
+    </div>
+
+    <script>
+        const priceProduct = 10999
+        const quantityGoods = 3
+        const sumPrice = priceProduct * quantityGoods
+        const tax = 5 / 100
+        let taxtThisProduct =  sumPrice * tax
+        taxtThisProduct = +taxtThisProduct.toFixed(2)
+
+        document.write(` <div class="lesson__container">
+                            <table>
+                                <tr>
+                                    <td>вартість без  ПДВ</td>
+                                    <td>${sumPrice} грн.</td>
+                                    <td>${quantityGoods} товари</td>
+                                </tr>
+                                <tr>
+                                    <td>податок ПДВ</td>
+                                    <td>${taxtThisProduct}  грн.</td>
+                                </tr>
+                                <tr>
+                                    <td>вартість з  ПДВ</td>
+                                    <td>${sumPrice + taxtThisProduct}  грн.</td>
+                                </tr>
+                            
+                            </table>
+                        </div >` )
+
+
+
+
+    </script>
+
+</body>
+
+</html>
